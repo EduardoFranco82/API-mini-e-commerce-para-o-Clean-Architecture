@@ -17,7 +17,7 @@ def create(schema: CreateProductSchema):
   
   return product
 
-@router.post('/', status_code= status.HTTP_201_CREATED)
+@router.post('/create discount', status_code= status.HTTP_201_CREATED)
 def create_product_discount(schema:CreateProductDiscountSchema):
       
   uow = SqlAlchemyUnitOfWork()
